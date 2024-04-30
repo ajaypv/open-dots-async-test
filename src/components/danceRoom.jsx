@@ -49,7 +49,7 @@ const DanceRoom = () => {
             const currentTime = new Date().getTime();
                 const sessionTime = new Date(session.date).getTime();
                 const timeDifference = (currentTime - sessionTime) / 1000;
-                const timeToSeek = session.timestamp + timeDifference + 0.091;
+                const timeToSeek = session.timestamp + timeDifference + 0.05;
                 console.log(timeToSeek);
                 console.log(session.timestamp); 
                 playerRef.pl
