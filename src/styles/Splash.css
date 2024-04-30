@@ -1,0 +1,119 @@
+.logood{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 90px;
+
+   
+    
+}
+@media only screen and (max-width: 890px) {
+    .eye-cover1 {
+      left: 45%;
+    }
+  
+    .eye-cover2 {
+      left: 52.5%;
+    }
+  }
+  
+  @media only screen and (max-width: 860px) {
+    .logood{
+        font-size:40px;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .logood{
+        font-size:30px;
+    }
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .logood{
+        font-size:25px;
+    }
+  }
+
+  @media only screen and (max-width: 890px) {
+    .eye-cover1 {
+      left: 45%;
+    }
+  
+    .eye-cover2 {
+      left: 52.5%;
+    }
+  }
+  
+  @media only screen and (max-width: 860px) {
+    input[type="submit"] {
+      padding-inline: 0;
+    }
+    .logood{
+      font-size:40px;
+  }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .eye-cover1 {
+      left: 41.2%;
+    }
+  
+    .eye-cover2 {
+      left: 54.5%;
+    }
+  
+    .vector-3 {
+      top: 89%;
+    }
+    .logood{
+      font-size:30px;
+  }
+  }
+  
+  @media only screen and (max-width: 420px) {
+    main {
+      padding: 0;
+    }
+  
+    .social-login {
+      padding: 20px;
+    }
+  
+    .logo {
+      font-size: 28px;
+    }
+  
+    .logo img {
+      width: 92px;
+      height: 92px;
+    }
+  
+    .email-login {
+      padding: 20px;
+    }
+  
+    .btn a {
+      padding: 8px 12px;
+    }
+  
+    .eye-cover1 {
+      left: 41%;
+    }
+  
+    .eye-cover2 {
+      left: 56%;
+    }
+    .logood{
+      font-size:25px;
+  }
+  .sidebar{
+    display: none;
+  }
+  }

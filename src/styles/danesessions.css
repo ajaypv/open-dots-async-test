@@ -1,0 +1,36 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }

@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import '../styles/dblock.css'
+
+
 const Dblock = () => {
     return (
         <>
+        <div className="gallery">
         <div className="item">
-        <Link to="/danceroom">
+        <Link to="/dancesessions">
       
       <div className="circle">
         <img className="responsive-image" src="https://www.shutterstock.com/image-photo/group-energetic-hiphop-dancers-focused-600nw-702288490.jpg" alt="circle" />
@@ -35,6 +39,7 @@ const Dblock = () => {
       <p>foose ball</p>
      
      
+    </div>
     </div>
 
    </>
