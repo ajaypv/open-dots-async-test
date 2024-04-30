@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDatabase, ref, onValue,update } from "firebase/database";
 import { initializeApp } from "firebase/app";
+import { count } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCOggO8RKta6u0qolwyfOkpTijFznKlysg",
@@ -76,6 +77,21 @@ const SessionDetails = () => {
                       timestamp: player.getCurrentTime(),
                       date: new Date().toISOString()
                     });
+
+                    let count = 0;
+
+                    // Start updating timestamp and time every 3 seconds
+                    interval = setInterval(() => {
+                      count++;
+                      if(count <= 3){
+
+                     
+                      update(ref(db, `sessions/${sessionId}`), {
+                        timestamp: player.getCurrentTime(),
+                        date: new Date().toISOString() // This will record the current date and time in ISO format
+                      }); }
+                    }, 2000);
+                  
                     break;
                   case window.YT.PlayerState.PAUSED:
                     console.log('Video is paused');
