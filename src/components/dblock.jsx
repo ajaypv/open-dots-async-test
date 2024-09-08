@@ -31,12 +31,13 @@ const Dblock = () => {
     </div>
     <div className="item">
 
-      
+    <Link to="/foosball">
     
       <div className="circle">
         <img className="responsive-image" src="https://image1.masterfile.com/getImage/NjQ5LTA3MDYzNTUyZW4uMDAwMDAwMDA=APu48q/649-07063552en_Masterfile.jpg" alt="circle" />
       </div>
       <p>foose ball</p>
+      </Link>
      
      
     </div>
