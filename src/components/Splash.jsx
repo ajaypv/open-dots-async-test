@@ -103,7 +103,7 @@ function updateStars() {
   return (
     <>
      <canvas id="stars"></canvas>
-     <div className="logood">OPEN DOTS</div>
+     <div className="logood">Oracle Spaces</div>
     </>
   );
 }
