@@ -33,7 +33,16 @@ const LeaderboardRow = ({ player, index }) => {
         {index === 2 && <Trophy className="w-4 h-4 text-yellow-700 inline-block" />}
         <span className={`ml-1 md:ml-2 font-semibold ${isTopThree ? 'text-lg' : ''}`}>{index + 1}</span>
       </td>
-      <td className="p-2 md:p-3 font-medium">{player.name}</td>
+      <td className="p-2 md:p-3 font-medium">
+        <div className="flex items-center">
+          <img
+            src={`https://api.dicebear.com/6.x/initials/svg?seed=${player.name}`}
+            alt={`${player.name}'s avatar`}
+            className="w-8 h-8 rounded-full mr-2"
+          />
+          {player.name}
+        </div>
+      </td>
       <td className="p-2 md:p-3">{player.gamesPlayed}</td>
       <td className="p-2 md:p-3 font-semibold text-green-600">{player.wins}</td>
       <td className="p-2 md:p-3 font-semibold text-red-600">{player.losses}</td>
@@ -175,6 +184,7 @@ const FoosballLeaderboard = () => {
         { name: 'Shreya', gamesPlayed: 22, wins: 14, losses: 8, trend: 1 },
         { name: 'Harsha', gamesPlayed: 22, wins: 13, losses: 8, trend: 0 },
         { name: 'Mukesh', gamesPlayed: 21, wins: 16, losses: 5, trend: 3 },
+        {name: 'Pavan', gamesPlayed: 21, wins: 16, losses: 5, trend: 3},
       ];
       setPlayers(data);
     };
@@ -224,7 +234,7 @@ const FoosballLeaderboard = () => {
                 <th className="p-2 md:p-3 cursor-pointer hover:bg-gray-100 transition-colors duration-200" onClick={() => handleSort('gamesPlayed')}>Games</th>
                 <th className="p-2 md:p-3 cursor-pointer hover:bg-gray-100 transition-colors duration-200" onClick={() => handleSort('wins')}>Wins</th>
                 <th className="p-2 md:p-3 cursor-pointer hover:bg-gray-100 transition-colors duration-200" onClick={() => handleSort('losses')}>Losses</th>
-                <th className="p-2 md:p-3 cursor-pointer hover:bg-gray-100 transition-colors duration-200" onClick={() => handleSort('winPercentage')}>Win %</th>
+                <th className="p-2 md:p-3 cursor-pointer hover:bg-gray-100 transition-colors duration-200" onClick={() => handleSort('winPercentage')}>Win%</th>
                 <th className="p-2 md:p-3">Trend</th>
               </tr>
             </thead>
