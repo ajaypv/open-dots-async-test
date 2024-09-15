@@ -36,7 +36,7 @@ const Dblock = () => {
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-12">
-          Explore Our Activities
+          Explore Our Communites and Activities
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {activities.map((activity, index) => (
