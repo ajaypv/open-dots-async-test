@@ -1,7 +1,7 @@
 // Ablock.jsx
 import React, { useState } from 'react';
 
-import '../styles/Ablock.css'
+
 
 const cafeteriaData = [
     {
